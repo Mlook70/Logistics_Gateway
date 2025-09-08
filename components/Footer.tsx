@@ -1,4 +1,5 @@
 import { Truck } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -7,10 +8,14 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Truck className="h-8 w-8 text-primary-green" />
               <div>
-                <h3 className="text-xl font-bold">بوابة التوصيل اللوجيستية</h3>
-                <p className="text-sm text-neutral-gray">Logistics Gateway</p>
+              <Image 
+                src="/logo_1.png" 
+                alt="Logistics Gateway Logo" 
+                width={200} 
+                height={200}
+                className="h-50 w-50 object-contain"
+              />
               </div>
             </div>
             <p className="text-neutral-gray leading-relaxed">
