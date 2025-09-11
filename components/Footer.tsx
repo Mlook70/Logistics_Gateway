@@ -47,8 +47,8 @@ export default function Footer() {
             <h4 className="text-lg font-bold mb-4">تواصل معنا</h4>
             <div className="space-y-2 text-neutral-gray">
               <p>920001234</p>
-              <p>info@logisticsgateway.sa</p>
-              <p>جدة، برج طريق الملك، الدور 8، شركة 803</p>
+              <p>info@logistic-gateway.com</p>
+              <p>جدة، برج طريق الملك، الدور 8، شركة 801</p>
             </div>
           </div>
         </div>
