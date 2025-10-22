@@ -18,8 +18,8 @@ export default function Hero() {
       {/* Content */}
       <div className="max-w-7xl mx-auto text-center relative z-10">
         <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-white">
-          <span className="block mb-4">شريكك الموثوق في</span>
-          <span className="text-[#A5CD39]">الحلول اللوجيستية</span>
+          <span className="block mb-4">بوابة التوصيل</span>
+          <span className="text-[#A5CD39]">اللوجيستية</span>
         </h2>
         <p className="text-xl md:text-2xl lg:text-3xl mb-12 max-w-4xl mx-auto leading-relaxed text-white">
           نقدم أفضل خدمات التوصيل والشحن مع ضمان الوصول الآمن والسريع لجميع أنحاء المملكة
