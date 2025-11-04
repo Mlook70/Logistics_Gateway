@@ -1,5 +1,7 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'بوابة التوصيل اللوجيستية - Logistics Gateway',
@@ -19,7 +21,11 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-arabic">{children}</body>
+      <body className="font-arabic">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

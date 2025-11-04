@@ -1,25 +1,37 @@
-import Image from 'next/image';
+import Image from "next/image";
+import Link from "next/link";
+import HeaderScrollWrapper from "@/components/layout/HeaderScrollWrapper"; 
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-dark-charcoal text-white py-4 px-6 shadow-lg">
-      <div className="max-w-7xl mx-auto flex items-center justify-between">
+    <HeaderScrollWrapper>
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
         <div className="flex items-center gap-3">
-          <Image 
-            src="/logo_1.png" 
-            alt="Logistics Gateway Logo" 
-            width={200} 
-            height={200}
-            className="h-50 w-50 object-contain"
+          <Image
+            src="/Logistic-Gateway.png"
+            alt="Logistics Gateway Logo"
+            width={100}
+            height={100}
+            priority
+            className="h-24 w-24 object-contain"
           />
         </div>
-        <nav className="hidden md:flex gap-8">
-          <a href="#home" className="hover:text-primary-green transition-colors">الرئيسية</a>
-          <a href="#about" className="hover:text-primary-green transition-colors">من نحن</a>
-          <a href="#services" className="hover:text-primary-green transition-colors">خدماتنا</a>
-          <a href="#contact" className="hover:text-primary-green transition-colors">تواصل معنا</a>
+
+        <nav className="hidden md:flex gap-8 font-medium">
+          <Link href="#home" className="hover:text-primary-green transition-colors">
+            الرئيسية
+          </Link>
+          <Link href="#about" className="hover:text-primary-green transition-colors">
+            من نحن
+          </Link>
+          <Link href="#services" className="hover:text-primary-green transition-colors">
+            خدماتنا
+          </Link>
+          <Link href="#contact" className="hover:text-primary-green transition-colors">
+            تواصل معنا
+          </Link>
         </nav>
       </div>
-    </header>
+    </HeaderScrollWrapper>
   );
 }

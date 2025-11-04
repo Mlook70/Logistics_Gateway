@@ -1,16 +1,15 @@
-import { Truck } from 'lucide-react';
 import Image from 'next/image';
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-charcoal text-white py-12 px-6">
+    <footer className="bg-[#000707] text-white py-12 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div>
               <Image 
-                src="/logo_1.png" 
+                src="/Logistic-Gateway.png" 
                 alt="Logistics Gateway Logo" 
                 width={200} 
                 height={200}
@@ -48,7 +47,7 @@ export default function Footer() {
             <div className="space-y-2 text-neutral-gray">
               <p>920001234</p>
               <p>info@logistic-gateway.com</p>
-              <p>جدة، برج طريق الملك، الدور 8، شركة 801</p>
+              <p>جدة، برج طريق الملك، الدور 8، مكتب 801</p>
             </div>
           </div>
         </div>

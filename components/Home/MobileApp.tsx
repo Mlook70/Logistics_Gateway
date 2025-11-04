@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-// App data array for better maintainability
 const mobileApps = [
   {
     id: 1,
@@ -12,25 +11,11 @@ const mobileApps = [
   },
   {
     id: 2,
-    name: "Jibluk App",
-    logo: "/apps/Jibluk_Logo.png",
-    alt: "Jibluk App Logo",
-    // No URL - will be rendered as image only
-  },
-  {
-    id: 3,
     name: "Bjeek App",
     logo: "/apps/Bjeek_Logo.png",
     alt: "Bjeek App Logo",
     url: "https://bjeek.com"
   },
-  {
-    id: 4,
-    name: "Darbcom App",
-    logo: "/apps/Darbcom_Logo.png",
-    alt: "Darbcom App Logo",
-    // No URL - will be rendered as image only
-  }
 ];
 
 export default function MobileApp() {
@@ -44,43 +29,37 @@ export default function MobileApp() {
           </p>
         </div>
 
-        {/* Mobile App Logos Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
+        {/* Centered Grid */}
+        <div className="flex flex-wrap justify-center gap-12">
           {mobileApps.map((app) => {
-            // Common image component
             const imageElement = (
               <Image
                 src={app.logo}
                 alt={app.alt}
                 width={100}
                 height={100}
-                className="object-contain hover-lift"
+                className="object-contain hover-lift rounded-2xl"
               />
             );
 
-            // If app has URL, wrap in Link, otherwise render as div
-            if (app.url) {
-              return (
-                <Link
-                  key={app.id}
-                  href={app.url} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="w-32 h-32 flex items-center justify-center transition-all p-4 hover:scale-105 cursor-pointer"
-                >
-                  {imageElement}
-                </Link>
-              );
-            } else {
-              return (
-                <div
-                  key={app.id}
-                  className="w-32 h-32 flex items-center justify-center p-4"
-                >
-                  {imageElement}
-                </div>
-              );
-            }
+            return app.url ? (
+              <Link
+                key={app.id}
+                href={app.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-32 h-32 flex items-center justify-center transition-all p-4 hover:scale-105 cursor-pointer"
+              >
+                {imageElement}
+              </Link>
+            ) : (
+              <div
+                key={app.id}
+                className="w-32 h-32 flex items-center justify-center p-4"
+              >
+                {imageElement}
+              </div>
+            );
           })}
         </div>
       </div>

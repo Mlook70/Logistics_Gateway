@@ -1,29 +1,26 @@
-// import Header from '../components/Header';
-// import Hero from '../components/Hero';
-// import Stats from '../components/Stats';
-// import AboutUs from '../components/AboutUs';
-// import Services from '../components/Services';
-// import SuccessPartners from '../components/SuccessPartners';
-// import MobileApp from '../components/MobileApp';
-// import Contact from '../components/Contact';
-// import Footer from '../components/Footer';
-import UnderConstruction from '../components/common/UnderConstruction';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+// import UnderConstruction from '@/components/common/UnderConstruction';
+import AboutUs from '@/components/Home/AboutUs';
+import Services from '@/components/Home/Services';
+import SuccessPartners from '@/components/Home/SuccessPartners';
+import MobileApp from '@/components/Home/MobileApp';
+import Hero from '@/components/Home/Hero';
+import Stats from '@/components/Home/Stats';
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen">
       {/* All components commented out during site reconstruction */}
-      {/* <Header />
-      <Hero /> */}
+      <Hero />
       {/* <Stats /> */}
-      {/* <AboutUs />
+      <AboutUs />
       <Services />
       <SuccessPartners />
-      <MobileApp /> */}
+      <MobileApp />
       {/* <Contact /> */}
-      {/* <Footer /> */}
       {/* Under Construction Component */}
-      <UnderConstruction />
+      {/* <UnderConstruction /> */}
     </main>
   );
 }
