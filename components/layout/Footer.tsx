@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import { Instagram } from 'lucide-react';
-import { FaTiktok, FaFacebook } from 'react-icons/fa';
+import { Instagram, Linkedin } from 'lucide-react';
+import { FaTiktok, FaFacebook, FaSnapchatGhost } from 'react-icons/fa';
 
 // Custom X (Twitter) Icon Component
 const XIcon: React.FC = () => (
@@ -16,6 +16,8 @@ export default function Footer() {
     { icon: FaTiktok, href: 'https://www.tiktok.com/@gate.way.sa', label: 'TikTok' },
     { icon: XIcon, href: 'https://x.com/gate_way_sa', label: 'X (Twitter)' },
     { icon: Instagram, href: 'https://www.instagram.com/gate.way.sa/', label: 'Instagram' },
+    { icon: FaSnapchatGhost, href: 'https://snapchat.com/t/EjTZIqZ7', label: 'Snapchat' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/company/logistic-gateway-co/', label: 'LinkedIn' },
   ];
 
   return (
