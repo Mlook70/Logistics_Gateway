@@ -13,10 +13,10 @@ export default function Footer() {
   // Social media links
   const socialLinks = [
     { icon: FaFacebook, href: 'https://www.facebook.com/profile.php?id=61583623737049', label: 'Facebook' },
-    { icon: FaTiktok, href: 'https://www.tiktok.com/@gate.way.sa', label: 'TikTok' },
-    { icon: XIcon, href: 'https://x.com/gate_way_sa', label: 'X (Twitter)' },
-    { icon: Instagram, href: 'https://www.instagram.com/gate.way.sa/', label: 'Instagram' },
-    { icon: FaSnapchatGhost, href: 'https://snapchat.com/t/EjTZIqZ7', label: 'Snapchat' },
+    { icon: FaTiktok, href: 'https://www.tiktok.com/@logisticgateway', label: 'TikTok' },
+    { icon: XIcon, href: 'https://x.com/logisticgateway', label: 'X (Twitter)' },
+    { icon: Instagram, href: 'https://www.instagram.com/logisticgateway/', label: 'Instagram' },
+    { icon: FaSnapchatGhost, href: 'https://snapchat.com/t/6WcXQzUc', label: 'Snapchat' },
     { icon: Linkedin, href: 'https://www.linkedin.com/company/logistic-gateway-co/', label: 'LinkedIn' },
   ];
 
